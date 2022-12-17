@@ -20,9 +20,9 @@ const Home = () => {
   const onMovementPress = (item: Movement) =>
     nav.navigate('Detail', {data: item});
 
-  const onShowWonMovements = () => selectFilter(FilterType.Won);
-  const onShowTradedMovements = () => selectFilter(FilterType.Traded);
-  const onShowAllMovements = () => selectFilter(FilterType.All);
+  const onShowWonMovementsPress = () => selectFilter(FilterType.Won);
+  const onShowRedeemedMovementsPress = () => selectFilter(FilterType.Redeemed);
+  const onShowAllMovementsPress = () => selectFilter(FilterType.All);
 
   return (
     <SafeAreaView className="flex-1 bg-light-gray">
@@ -39,11 +39,11 @@ const Home = () => {
       <View className="flex-row px-2 justify-center my-4">
         {filter === FilterType.All ? (
           <>
-            <Button title="Ganados" onPress={onShowWonMovements} />
-            <Button title="Canjeados" onPress={onShowTradedMovements} />
+            <Button title="Ganados" onPress={onShowWonMovementsPress} />
+            <Button title="Canjeados" onPress={onShowRedeemedMovementsPress} />
           </>
         ) : (
-          <Button title="Todos" onPress={onShowAllMovements} />
+          <Button title="Todos" onPress={onShowAllMovementsPress} />
         )}
       </View>
     </SafeAreaView>

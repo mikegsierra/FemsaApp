@@ -3,6 +3,7 @@ import {View, Text, Image, TouchableOpacity} from 'react-native';
 import placeholderImage from '../../../assets/images/placeholder.png';
 
 type MovementItemProps = {
+  index: number;
   description: string;
   dateAt: string;
   amount: string;
@@ -12,6 +13,7 @@ type MovementItemProps = {
 };
 
 const MovementItem = ({
+  index,
   description,
   dateAt,
   amount,
@@ -20,7 +22,7 @@ const MovementItem = ({
   onPress,
 }: MovementItemProps) => {
   return (
-    <TouchableOpacity onPress={onPress}>
+    <TouchableOpacity onPress={onPress} testID={`item-row-${index}`}>
       <View className="flex-row justify-between items-center py-2 px-2">
         <View className="w-14 h-14 bg-gray-700 rounded-lg">
           <Image

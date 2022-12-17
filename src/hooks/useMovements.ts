@@ -5,7 +5,7 @@ import {MovementService} from '../services/MovementService';
 enum FilterType {
   All,
   Won,
-  Traded,
+  Redeemed,
 }
 
 const useMovements = () => {
@@ -36,7 +36,7 @@ const useMovements = () => {
   useEffect(() => {
     if (filter === FilterType.Won) {
       setMovementsFiltered(() => movements.filter(move => move.isPositive));
-    } else if (filter === FilterType.Traded) {
+    } else if (filter === FilterType.Redeemed) {
       setMovementsFiltered(() => movements.filter(move => !move.isPositive));
     } else {
       setMovementsFiltered(movements);

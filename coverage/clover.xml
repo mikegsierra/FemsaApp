@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1671307523845" clover="3.2.0">
+  <project timestamp="1671307523845" name="All files">
+    <metrics statements="61" coveredstatements="60" conditionals="10" coveredconditionals="10" methods="29" coveredmethods="28" elements="100" coveredelements="98" complexity="0" loc="61" ncloc="61" packages="7" files="12" classes="12"/>
+    <package name="assets.images">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="placeholder.png" path="/Users/miguelgarcia/projects/CodeChallenge/Femsa/src/assets/images/placeholder.png">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components">
+      <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+      <file name="Button.tsx" path="/Users/miguelgarcia/projects/CodeChallenge/Femsa/src/components/Button.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="62" type="stmt"/>
+      </file>
+      <file name="Header.tsx" path="/Users/miguelgarcia/projects/CodeChallenge/Femsa/src/components/Header.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="34" type="stmt"/>
+      </file>
+      <file name="Loading.tsx" path="/Users/miguelgarcia/projects/CodeChallenge/Femsa/src/components/Loading.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="24" type="stmt"/>
+      </file>
+      <file name="Section.tsx" path="/Users/miguelgarcia/projects/CodeChallenge/Femsa/src/components/Section.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="68" type="stmt"/>
+      </file>
+    </package>
+    <package name="config">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/Users/miguelgarcia/projects/CodeChallenge/Femsa/src/config/index.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="2" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="hooks">
+      <metrics statements="27" coveredstatements="26" conditionals="4" coveredconditionals="4" methods="10" coveredmethods="10"/>
+      <file name="useMovements.ts" path="/Users/miguelgarcia/projects/CodeChallenge/Femsa/src/hooks/useMovements.ts">
+        <metrics statements="27" coveredstatements="26" conditionals="4" coveredconditionals="4" methods="10" coveredmethods="10"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="40" type="stmt"/>
+        <line num="13" count="40" type="stmt"/>
+        <line num="14" count="40" type="stmt"/>
+        <line num="15" count="40" type="stmt"/>
+        <line num="16" count="40" type="stmt"/>
+        <line num="18" count="40" type="stmt"/>
+        <line num="19" count="6" type="stmt"/>
+        <line num="20" count="6" type="stmt"/>
+        <line num="21" count="6" type="stmt"/>
+        <line num="22" count="6" type="stmt"/>
+        <line num="24" count="6" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="28" count="6" type="stmt"/>
+        <line num="32" count="40" type="stmt"/>
+        <line num="33" count="6" type="stmt"/>
+        <line num="36" count="40" type="stmt"/>
+        <line num="37" count="14" type="cond" truecount="2" falsecount="0"/>
+        <line num="38" count="5" type="stmt"/>
+        <line num="39" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="40" count="5" type="stmt"/>
+        <line num="42" count="12" type="stmt"/>
+        <line num="46" count="40" type="stmt"/>
+        <line num="47" count="20" type="stmt"/>
+        <line num="48" count="35" type="stmt"/>
+        <line num="50" count="20" type="stmt"/>
+        <line num="53" count="40" type="stmt"/>
+      </file>
+    </package>
+    <package name="screens.Home">
+      <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="4"/>
+      <file name="index.tsx" path="/Users/miguelgarcia/projects/CodeChallenge/Femsa/src/screens/Home/index.tsx">
+        <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="4"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="40" type="stmt"/>
+        <line num="18" count="40" type="stmt"/>
+        <line num="20" count="40" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="23" count="40" type="stmt"/>
+        <line num="24" count="40" type="stmt"/>
+        <line num="25" count="40" type="stmt"/>
+        <line num="27" count="40" type="stmt"/>
+      </file>
+    </package>
+    <package name="screens.Home.components">
+      <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="6"/>
+      <file name="Card.tsx" path="/Users/miguelgarcia/projects/CodeChallenge/Femsa/src/screens/Home/components/Card.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="22" type="stmt"/>
+      </file>
+      <file name="MovementItem.tsx" path="/Users/miguelgarcia/projects/CodeChallenge/Femsa/src/screens/Home/components/MovementItem.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="24" count="70" type="stmt"/>
+      </file>
+      <file name="MovementsList.tsx" path="/Users/miguelgarcia/projects/CodeChallenge/Femsa/src/screens/Home/components/MovementsList.tsx">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="22" type="stmt"/>
+        <line num="16" count="70" type="stmt"/>
+        <line num="19" count="70" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="services">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <file name="MovementService.ts" path="/Users/miguelgarcia/projects/CodeChallenge/Femsa/src/services/MovementService.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="12" count="6" type="stmt"/>
+        <line num="13" count="6" type="stmt"/>
+        <line num="15" count="30" type="stmt"/>
+        <line num="19" count="30" type="stmt"/>
+        <line num="21" count="30" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

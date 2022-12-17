@@ -15,14 +15,15 @@ const MovementsList = ({data, onMovementPress}: MovementListProps) => {
       data={data}
       keyExtractor={item => item.id}
       showsVerticalScrollIndicator={false}
-      renderItem={({item}) => (
+      renderItem={({item, index}) => (
         <MovementItem
-          onPress={() => onMovementPress(item)}
+          index={index}
           description={item.description}
           dateAt={item.createdAt}
           amount={item.amountText}
           imageUrl={item.imageUrl}
           isPositive={item.isPositive}
+          onPress={() => onMovementPress(item)}
         />
       )}
     />

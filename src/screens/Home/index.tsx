@@ -24,6 +24,7 @@ const Home = () => {
   const [filter, setFilter] = useState<FilterType>(FilterType.All);
   const [movements, setMovements] = useState<Movement[]>([]);
   const [movementsFiltered, setMovementsFiltered] = useState<Movement[]>([]);
+  const [total, setTotal] = useState('');
 
   const onMovementPress = (item: Movement) => {
     console.log('Item', item);
@@ -58,6 +59,13 @@ const Home = () => {
     }
   }, [movements, filter]);
 
+  useEffect(() => {
+    const totalPoints = movementsFiltered.reduce<number>((accumulator, obj) => {
+      return accumulator + obj.amount;
+    }, 0);
+    setTotal(totalPoints.toLocaleString('en-US'));
+  }, [movementsFiltered]);
+
   const onShowWonMovements = () => setFilter(FilterType.Won);
   const onShowTradedMovements = () => setFilter(FilterType.Traded);
   const onShowAllMovements = () => setFilter(FilterType.All);
@@ -66,8 +74,8 @@ const Home = () => {
     <SafeAreaView className="flex-1 bg-light-gray">
       <Header title="Bienvenido de vuelta!" subtitle="Ruben Rodriguez" />
 
-      <Section title="Tus puntos">
-        <Card title="Diciembre" subtitle="10,000.00 pts" />
+      <Section title="Tus puntos" loading={loading}>
+        <Card title="Diciembre" subtitle={`${total} pts`} />
       </Section>
 
       <Section title="Tus movimientos" loading={loading}>

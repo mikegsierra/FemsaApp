@@ -22,6 +22,7 @@ export class MovementService {
       id: input.id,
       description: input.product,
       amount: input.points,
+      amountText: input.points.toLocaleString('en-US'),
       imageUrl: input.image,
       isPositive: input.is_redemption,
       createdAt,

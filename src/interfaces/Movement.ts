@@ -4,6 +4,7 @@ export interface Movement {
   createdAt: string;
   imageUrl: string;
   amount: number;
+  amountText: string;
   isPositive: boolean;
 }
 

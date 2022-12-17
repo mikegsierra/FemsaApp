@@ -5,7 +5,7 @@ import placeholderImage from '../../../assets/images/placeholder.png';
 type MovementItemProps = {
   description: string;
   dateAt: string;
-  amount: number;
+  amount: string;
   imageUrl: string;
   isPositive: boolean;
   onPress: () => void;

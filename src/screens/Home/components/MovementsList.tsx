@@ -20,7 +20,7 @@ const MovementsList = ({data, onMovementPress}: MovementListProps) => {
           onPress={() => onMovementPress(item)}
           description={item.description}
           dateAt={item.createdAt}
-          amount={item.amount}
+          amount={item.amountText}
           imageUrl={item.imageUrl}
           isPositive={item.isPositive}
         />

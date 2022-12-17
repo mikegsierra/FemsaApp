@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {Image, ScrollView, Text, View} from 'react-native';
+import {Image, ScrollView, View} from 'react-native';
 import {RouteProp, useNavigation, useRoute} from '@react-navigation/native';
 import {RootNavigationProps} from '../../navigation/RootNavigation';
 import {Movement} from '../../interfaces/Movement';
@@ -7,6 +7,7 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import Button from '../../components/Button';
 import DetailHeader from './components/DetailHeader';
 import placeholderImage from '../../assets/images/placeholder.png';
+import SectionDetail from './components/SectionDetail';
 
 const Detail = () => {
   const {params} = useRoute<RouteProp<RootNavigationProps>>();
@@ -35,21 +36,15 @@ const Detail = () => {
           />
         </View>
 
-        <View className="mt-4">
-          <Text className="text-sm text-mid-gray font-bold">
-            Detalles del producto
-          </Text>
-          <Text className="text-base font-bold mt-2">
-            Comprado el 26 de enero, 2019
-          </Text>
-        </View>
-
-        <View className="mt-4">
-          <Text className="text-sm text-mid-gray font-bold">
-            Con esta compra acumulaste:
-          </Text>
-          <Text className="text-2xl font-bold mt-2">100 puntos</Text>
-        </View>
+        <SectionDetail
+          label="Detalles del producto"
+          description={`Comprado el ${item.createdAt}`}
+        />
+        <SectionDetail
+          label="Con esta compra acumulaste:"
+          description={`${item.amountText} puntos`}
+          descriptionSize="large"
+        />
       </ScrollView>
 
       <View className="px-4">
